@@ -1,0 +1,45 @@
+#head{
+    position: relative;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: -2;
+}
+.switch{
+    background-color: greenyellow;
+    height: 30px;
+    object-fit: cover;
+}
+
+.slide .switch{
+left: 50%;
+}
+.new{
+    background-color: aliceblue;
+}
+#pause{
+background-color: coral;
+height: 30px;
+}
+#play{
+    background-color: white;
+    height: 30px;
+}
+.preloader{
+    visibility: visible;
+    position: fixed;
+    overflow: hidden;
+    z-index: 999;
+    transition: var(--transition);
+    display: grid;
+}
+.no-preloader{
+    visibility: hidden;
+    z-index: -999;
+}
